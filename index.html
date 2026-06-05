@@ -82,11 +82,7 @@ body{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-se
 [data-size="lg"] .hero-title{font-size:40px}[data-size="md"] .hero-title{font-size:34px}[data-size="sm"] .hero-title{font-size:28px}
 /* 固定不隨 sm/md/lg 縮放的元素 */
 nav a{font-size:14px!important}
-.subsection-title,.td-id-inline,.izy-badge-text,.nav-brand-title{font-size:14px!important}
-.ctrl-btn{font-size:12px!important}
-
-/* ═══ RESET ═══ */
-*{margin:0;padding:0;box-sizing:border-box}
+.subsection-title,.td-id-inline,.izy-badge-text,.nav-brand-title{font-size:24px;color:#f0a500;font-weight:700}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:15px;line-height:1.7;display:flex;min-height:100vh;transition:background .25s,color .25s}
 
@@ -117,7 +113,7 @@ nav{
   transition:background .25s,border-color .25s;
 }
 .nav-brand{padding:0 18px 22px;border-bottom:1px solid var(--border);margin-bottom:14px}
-.nav-brand-title{font-family:var(--serif);font-size:14px;font-weight:700;color:var(--header);line-height:1.35;letter-spacing:.02em}
+.nav-brand-title{font-size:24px;color:#f0a500;font-weight:700}
 .nav-brand-sub{font-family:var(--mono);font-size:9.5px;color:var(--accent);letter-spacing:.1em;margin-top:6px;text-transform:uppercase}
 .nav-section-label{font-family:var(--mono);font-size:8.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--text3);padding:12px 18px 5px}
 nav a{display:flex;align-items:center;gap:9px;padding:7px 18px;color:var(--text2);text-decoration:none;font-size:12.5px;transition:all .14s;border-left:2px solid transparent}
@@ -539,6 +535,13 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
 .td-id-inline{font-family:var(--mono);font-size:10px;color:var(--accent3);display:block;margin-bottom:3px}
 
 
+
+/* ═══ CARD CLICK HINT ═══ */
+.sec-click-hint{font-family:var(--mono);font-size:12px;color:var(--accent3);
+  text-align:center;padding:6px 0 4px;letter-spacing:.14em;
+  animation:hintBreathe 2.4s ease-in-out infinite}
+@keyframes hintBreathe{0%,100%{opacity:.3}50%{opacity:1}}
+
 /* ═══ ARROW BREATHE ═══ */
 @keyframes arrowBreathe{
   0%,100%{opacity:.3;filter:none}
@@ -582,7 +585,7 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
     <div class="nav-brand-sub">▸ 2026 · MAY</div>
   </div>
   <div class="nav-section-label">監控指標</div>
-    <a href="#" onclick="navClickSec('sec-framework');return false;"><span class="nav-num">01</span><div class="nav-dot"></div>景氣循環投資框架</a>
+      <a href="#" onclick="navClickSec('sec-framework');return false;"><span class="nav-num">01</span><div class="nav-dot"></div>景氣循環投資框架</a>
   <a href="#" onclick="navClickSec('sec-valuation');return false;"><span class="nav-num">02</span><div class="nav-dot"></div>市場估值</a>
   <a href="#" onclick="navClickSec('sec-gdp');return false;"><span class="nav-num">03</span><div class="nav-dot"></div>GDP 與宏觀</a>
   <a href="#" onclick="navClickSec('sec-employment');return false;"><span class="nav-num">04</span><div class="nav-dot"></div>就業市場</a>
@@ -591,6 +594,7 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
   <a href="#" onclick="navClickSec('sec-earnings');return false;"><span class="nav-num">07</span><div class="nav-dot"></div>企業獲利</a>
   <a href="#" onclick="navClickSec('sec-risk');return false;"><span class="nav-num">08</span><div class="nav-dot"></div>風險與流動性</a>
   <a href="#" onclick="navClickSec('sec-fed');return false;"><span class="nav-num">09</span><div class="nav-dot"></div>FED 升/降息意向</a>
+
 
   <div class="izy-section">
     <div class="izy-badge">
@@ -602,6 +606,7 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
 
 <!-- MAIN -->
 <main>
+
 <div class="content-section" id="sec-market-phase">
   <div class="section-header">
     <div class="section-num">00</div>
@@ -720,14 +725,14 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
       <g transform="translate(604,40.8)">
         <circle class="biz-dot-pulse" r="9" fill="rgba(240,165,0,.25)"/>
         <circle r="5" fill="#fff" stroke="#f0a500" stroke-width="2.5"/>
-        <rect x="-38" y="-36" width="76" height="18" rx="3" fill="#f0a500"/>
+        <rect x="-54" y="-36" width="108" height="18" rx="3" fill="#f0a500"/>
         <text x="0" y="-23" text-anchor="middle" font-family="IBM Plex Mono,monospace"   fill="#080b10" font-weight="700" font-size="12">景氣大循環位階</text>
         <line x1="0" y1="-18" x2="0" y2="-5" stroke="#f0a500" stroke-width="1.5"/>
       </g>
       <g transform="translate(545,47.9)">
         <circle class="mfg-dot-pulse" r="7" fill="rgba(77,159,255,.25)"/>
         <circle r="4.5" fill="#fff" stroke="#4d9fff" stroke-width="2"/>
-        <rect x="-38" y="10" width="76" height="18" rx="3" fill="#4d9fff"/>
+        <rect x="-54" y="10" width="108" height="18" rx="3" fill="#4d9fff"/>
         <text x="0" y="23" text-anchor="middle" font-family="IBM Plex Mono,monospace"   fill="#080b10" font-weight="700" font-size="12">製造業週期位階</text>
         <line x1="0" y1="5" x2="0" y2="10" stroke="#4d9fff" stroke-width="1.5"/>
       </g>
@@ -741,14 +746,8 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
 
 </div>
 
-  <!-- 大小波圖 -->
-  </div>
-
-
-
-<!-- ══ 01 市場估值 ══ -->
-
 <div class="sec-group" id="sec-group-r1">
+<div class="sec-click-hint">▼ 點擊展開內容</div>
 <div class="sec-tab-bar cols-3">
   <div class="sec-tab" id="sec-tab-sec-framework" onclick="toggleSecTab('r1','sec-framework')">
     <div class="sec-tab-header">
@@ -993,11 +992,8 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
   </div>
 </div>
 </div>
-</div>
->
-</div>
 <div class="sec-panel-wrap" id="sec-panel-sec-valuation">
-  <div class="content-section" id="sec-valuation">
+<div class="content-section" id="sec-valuation">
   <div class="section-header">
     <div class="section-num">01</div>
     <div class="section-title-wrap">
@@ -1055,11 +1051,9 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
     </div>
   </div>
 </div>
-
-<!-- ══ 02 GDP ══ -->
 </div>
 <div class="sec-panel-wrap" id="sec-panel-sec-gdp">
-  <div class="content-section" id="sec-gdp">
+<div class="content-section" id="sec-gdp">
   <div class="section-header">
     <div class="section-num">02</div>
     <div class="section-title-wrap">
@@ -1137,10 +1131,6 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
     </div>
   </div>
 </div>
-
-<!-- ══════════════════════════════════════
-  03  就業市場
-══════════════════════════════════════ -->
 </div>
 </div>
 
@@ -1172,7 +1162,7 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
   </div>
 </div>
 <div class="sec-panel-wrap" id="sec-panel-sec-employment">
-  <div class="content-section" id="sec-employment">
+<div class="content-section" id="sec-employment">
   <div class="section-header">
     <div class="section-num">03</div>
     <div class="section-title-wrap">
@@ -1250,40 +1240,9 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
     </div>
   </div>
 </div>
-
-<!-- ══ 04 通膨 ══ -->
-</div>
-</div>
-
-<div class="sec-group" id="sec-group-r2">
-<div class="sec-tab-bar cols-3">
-  <div class="sec-tab" id="sec-tab-sec-inflation" onclick="toggleSecTab('r2','sec-inflation')">
-    <div class="sec-tab-header">
-      <span class="sec-tab-num">04</span>
-      <span class="sec-tab-title">通貨膨脹</span>
-      <span class="sec-tab-arrow">▼</span>
-    </div>
-    <div class="sec-tab-indicators"><span class="sec-ind-chip">核心CPI</span><span class="sec-ind-chip">核心PCE</span><span class="sec-ind-chip">PPI</span><span class="sec-ind-chip">房租OER</span><span class="sec-ind-chip">能源CPI</span><span class="sec-ind-chip">密西根通膨預期</span></div>
-  </div>
-  <div class="sec-tab" id="sec-tab-sec-pmi" onclick="toggleSecTab('r2','sec-pmi')">
-    <div class="sec-tab-header">
-      <span class="sec-tab-num">05</span>
-      <span class="sec-tab-title">PMI 景氣</span>
-      <span class="sec-tab-arrow">▼</span>
-    </div>
-    <div class="sec-tab-indicators"><span class="sec-ind-chip">ISM製造業</span><span class="sec-ind-chip">新訂單</span><span class="sec-ind-chip">積壓訂單</span><span class="sec-ind-chip">供應商交期</span><span class="sec-ind-chip">ISM服務業</span><span class="sec-ind-chip">S&P Global PMI</span></div>
-  </div>
-  <div class="sec-tab" id="sec-tab-sec-earnings" onclick="toggleSecTab('r2','sec-earnings')">
-    <div class="sec-tab-header">
-      <span class="sec-tab-num">06</span>
-      <span class="sec-tab-title">企業獲利</span>
-      <span class="sec-tab-arrow">▼</span>
-    </div>
-    <div class="sec-tab-indicators"><span class="sec-ind-chip">Forward EPS</span><span class="sec-ind-chip">超預期率</span><span class="sec-ind-chip">利潤率</span><span class="sec-ind-chip">勞動佔比</span><span class="sec-ind-chip">各板塊EPS</span><span class="sec-ind-chip">指數目標點位</span></div>
-  </div>
 </div>
 <div class="sec-panel-wrap" id="sec-panel-sec-inflation">
-  <div class="content-section" id="sec-inflation">
+<div class="content-section" id="sec-inflation">
   <div class="section-header">
     <div class="section-num">04</div>
     <div class="section-title-wrap">
@@ -1346,11 +1305,9 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
     </div>
   </div>
 </div>
-
-<!-- ══ 05 PMI ══ -->
 </div>
 <div class="sec-panel-wrap" id="sec-panel-sec-pmi">
-  <div class="content-section" id="sec-pmi">
+<div class="content-section" id="sec-pmi">
   <div class="section-header">
     <div class="section-num">05</div>
     <div class="section-title-wrap">
@@ -1402,8 +1359,6 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
     </div>
   </div>
 </div>
-
-<!-- ══ 06 企業獲利 ══ -->
 </div>
 </div>
 
@@ -1435,7 +1390,7 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
   </div>
 </div>
 <div class="sec-panel-wrap" id="sec-panel-sec-earnings">
-  <div class="content-section" id="sec-earnings">
+<div class="content-section" id="sec-earnings">
   <div class="section-header">
     <div class="section-num">06</div>
     <div class="section-title-wrap">
@@ -1503,42 +1458,9 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
     </table></div>
   </div>
   </div>
-
-<!-- ══════════════════════════════════════
-  07  風險與流動性
-══════════════════════════════════════ -->
-</div>
-</div>
-
-<div class="sec-group" id="sec-group-r3">
-<div class="sec-tab-bar cols-3">
-  <div class="sec-tab" id="sec-tab-sec-risk" onclick="toggleSecTab('r3','sec-risk')">
-    <div class="sec-tab-header">
-      <span class="sec-tab-num">07</span>
-      <span class="sec-tab-title">風險與流動性</span>
-      <span class="sec-tab-arrow">▼</span>
-    </div>
-    <div class="sec-tab-indicators"><span class="sec-ind-chip">VIX</span><span class="sec-ind-chip">BBB利差</span><span class="sec-ind-chip">HY利差</span><span class="sec-ind-chip">MOVE</span><span class="sec-ind-chip">DXY</span><span class="sec-ind-chip">貨幣市場規模</span><span class="sec-ind-chip">Fed資產負債表</span></div>
-  </div>
-  <div class="sec-tab" id="sec-tab-sec-fed" onclick="toggleSecTab('r3','sec-fed')">
-    <div class="sec-tab-header">
-      <span class="sec-tab-num">08</span>
-      <span class="sec-tab-title">FED 升/降息意向</span>
-      <span class="sec-tab-arrow">▼</span>
-    </div>
-    <div class="sec-tab-indicators"><span class="sec-ind-chip">Fed Funds Rate</span><span class="sec-ind-chip">SOFR</span><span class="sec-ind-chip">CME FedWatch</span><span class="sec-ind-chip">2Y殖利率</span><span class="sec-ind-chip">10Y殖利率</span><span class="sec-ind-chip">三種情境</span></div>
-  </div>
-  <div class="sec-tab" id="sec-tab-sec-framework" onclick="toggleSecTab('r3','sec-framework')">
-    <div class="sec-tab-header">
-      <span class="sec-tab-num">09</span>
-      <span class="sec-tab-title">景氣循環投資框架</span>
-      <span class="sec-tab-arrow">▼</span>
-    </div>
-    <div class="sec-tab-indicators"><span class="sec-ind-chip">先行/同步/滯後指標</span><span class="sec-ind-chip">IZY四格局</span><span class="sec-ind-chip">四大循環</span><span class="sec-ind-chip">公債循環</span><span class="sec-ind-chip">操盤法則</span></div>
-  </div>
 </div>
 <div class="sec-panel-wrap" id="sec-panel-sec-risk">
-  <div class="content-section" id="sec-risk">
+<div class="content-section" id="sec-risk">
   <div class="section-header">
     <div class="section-num">07</div>
     <div>
@@ -1607,8 +1529,9 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
     </div>
   </div>
 </div>
+</div>
 <div class="sec-panel-wrap" id="sec-panel-sec-fed">
-  <div class="content-section" id="sec-fed">
+<div class="content-section" id="sec-fed">
   <div class="section-header">
     <div class="section-num">08</div>
     <div class="section-title-wrap">
@@ -1674,270 +1597,9 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
       <div class="checkpoint-item"><div class="checkpoint-marker">最後確認</div><div class="checkpoint-text">FedWatch 升息機率突破 50% + 2Y 突破前高 + 核心 PCE 月增率連續兩個月 ≥ 0.3% → 三者同步，升息幾乎板上釘釘</div></div>
     </div>
   </div>
-
-  <!-- 小節二：Fed 意向 -->
-  <div class="subsection">
-    <div class="subsection-title">小節二：Fed 意向（Fed 真正盯的數據）</div>
-    <div class="table-wrap"><table>
-      <thead><tr><th>指標名稱</th><th>Series ID / 來源</th><th>連結</th><th>判讀</th><th>用途</th></tr></thead>
-      <tbody>
-        <tr><td class="td-name">核心 PCE 月增率</td><td class="td-link"><span class="td-id-inline">PCEPILFE · FRED</span><br><a href="https://fred.stlouisfed.org/series/PCEPILFE" target="_blank">FRED ↗</a></td><td class="td-interpret sig-neutral">參見上方小結</td><td class="td-purpose">Fed 首選通膨指標。月增率連續高於 0.2–0.3%（年化 &gt; 3%）即產生升息壓力</td></tr>
-        <tr><td class="td-name">超級核心通膨（Core Services ex-Housing PCE）</td><td class="td-link"><span class="td-id-inline">BEA</span><br><a href="https://www.bea.gov" target="_blank">BEA ↗</a></td><td class="td-interpret sig-neutral">參見上方小結</td><td class="td-purpose">Powell 2022年後明確點名。服務業通膨最難壓制，是 Fed 判斷通膨僵固性的核心細項</td></tr>
-        <tr><td class="td-name">非農就業人數 + 時薪年增率</td><td class="td-link"><span class="td-id-inline">PAYEMS + CES0500000003</span><br><a href="https://fred.stlouisfed.org/series/PAYEMS" target="_blank">FRED ↗</a></td><td class="td-interpret sig-neutral">參見上方小結</td><td class="td-purpose">就業強勁 = Fed 有空間升息；時薪年增率持續 &gt; 4% 是升息警戒線</td></tr>
-        <tr><td class="td-name">密西根大學長期通膨預期（5–10年）</td><td class="td-link"><span class="td-id-inline">MICH · FRED</span><br><a href="https://fred.stlouisfed.org/series/MICH" target="_blank">FRED ↗</a></td><td class="td-interpret sig-neutral">參見上方小結</td><td class="td-purpose">通膨心理錨。脫錨至 3% 以上 Fed 幾乎必須行動</td></tr>
-        <tr><td class="td-name">JOLTS 職位空缺數</td><td class="td-link"><span class="td-id-inline">JTSJOL · FRED</span><br><a href="https://fred.stlouisfed.org/series/JTSJOL" target="_blank">FRED ↗</a></td><td class="td-interpret sig-warn">⚠ 職缺/失業比仍略>1.0，市場偏緊但持續降溫中</td><td class="td-purpose">空缺/失業人數比值是 Fed 判斷勞動市場過熱的核心依據</td></tr>
-        <tr><td class="td-name">單位勞動成本</td><td class="td-link"><span class="td-id-inline">ULCNFB · FRED</span><br><a href="https://fred.stlouisfed.org/series/ULCNFB" target="_blank">FRED ↗</a></td><td class="td-interpret sig-warn">⚠ Q1季增2.3%，年增1.2%，開始加速但仍在可控範圍</td><td class="td-purpose">薪資增速超過生產力即形成成本推動型通膨，Fed 用以判斷工資-物價螺旋風險</td></tr>
-        <tr><td class="td-name">銀行放貸標準 SLOOS</td><td class="td-link"><span class="td-id-inline">DRTSCILM · FRED</span><br><a href="https://fred.stlouisfed.org/series/DRTSCILM" target="_blank">FRED ↗</a></td><td class="td-interpret sig-neutral">參見上方小結</td><td class="td-purpose">信用環境是否已夠緊，Fed 用來判斷升息效果是否傳導至實體經濟</td></tr>
-        <tr><td class="td-name">FOMC 點陣圖 Dot Plot</td><td class="td-link"><span class="td-id-inline">Fed</span><br><a href="https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260318.htm" target="_blank">Fed ↗</a></td><td class="td-interpret sig-neutral">參見上方小結</td><td class="td-purpose">委員們自己對利率路徑的預測，每季更新，是 Fed 內部意向最直接的公開表達</td></tr>
-      </tbody>
-    </table></div>
-  </div>
-
-  <!-- 小節三：當前推論 -->
-  <div class="subsection">
-    <div class="subsection-title">小節三：當前推論與判斷（2026年5月）</div>
-
-    <div class="table-wrap"><table>
-      <thead><tr><th>指標</th><th>當前數值（2026/05/22）</th><th>訊號</th><th>判讀</th></tr></thead>
-      <tbody>
-        <tr>
-          <td class="td-name">Fed Funds Rate</td>
-          <td>3.50–3.75%，連三次按兵不動（上次決策：4/29）</td>
-          <td class="td-signal sig-neutral">中性</td>
-          <td class="td-interpret">Fed 維持觀望，等待通膨進一步降溫。下次 FOMC 為 6/17，短期幾乎無行動空間。</td>
-        </tr>
-        <tr>
-          <td class="td-name">CME FedWatch 6月</td>
-          <td>~96% 維持不動（6/17 FOMC）</td>
-          <td class="td-signal sig-ok">短期無行動</td>
-          <td class="td-interpret">6月不動幾乎確定，市場共識極高，無意外驚喜。</td>
-        </tr>
-        <tr>
-          <td class="td-name">CME FedWatch 12月</td>
-          <td>升息機率約 41.8%（↑ 較一個月前 2% 大幅飆升）</td>
-          <td class="td-signal sig-warn">⚠ 急速升溫</td>
-          <td class="td-interpret">升息尾部風險快速累積，市場正在重新定價「升息循環尚未結束」。若突破 50% 即為重大轉折信號。</td>
-        </tr>
-        <tr>
-          <td class="td-name">隔夜 SOFR</td>
-          <td>約 3.59%，緊貼目標區間上緣</td>
-          <td class="td-signal sig-neutral">中性</td>
-          <td class="td-interpret">短端流動性正常，無立即壓力，但已靠近上緣，持續監控。</td>
-        </tr>
-        <tr>
-          <td class="td-name">SOFR 曲線形態</td>
-          <td>已從倒掛轉走平，12M Term SOFR 利差轉正</td>
-          <td class="td-signal sig-warn">⚠ 升息尾部風險啟動</td>
-          <td class="td-interpret">形態已從「降息定價」轉為「維持不動」，並開始向升息端偏移。這是整個指標體系中最早的警報訊號，需密切追蹤是否進一步轉向正傾斜。</td>
-        </tr>
-        <tr>
-          <td class="td-name">2Y 美債殖利率</td>
-          <td>4.13%（5/22），過去一個月上升 ~0.3%</td>
-          <td class="td-signal sig-warn">⚠ 升息定價持續累積</td>
-          <td class="td-interpret">2Y 殖利率是市場對 Fed 路徑最敏感的指標。持續走升反映市場已認真看待升息可能性。</td>
-        </tr>
-        <tr>
-          <td class="td-name">10Y / 30Y 殖利率</td>
-          <td>10Y：4.57%；30Y：~5.0%（5/22，均為年內高位）</td>
-          <td class="td-signal sig-warn">⚠ 長端同步走升</td>
-          <td class="td-interpret">長端殖利率創年內新高，反映市場對通膨持久性憂慮。FOMC 會議紀要顯示多數委員認為若通膨持續超標，進一步升息仍屬適當。</td>
-        </tr>
-        <tr>
-          <td class="td-name">核心 PCE（3月）</td>
-          <td>3.2% YoY，MoM 0.3%（4月數據 6/27 公布）</td>
-          <td class="td-signal sig-warn">⚠ 持續高於目標</td>
-          <td class="td-interpret">3.2% 遠高於 Fed 2% 目標，且月增率 0.3% 已達 Fed 升息壓力門檻。4月數據若再度超預期，將強化升息情境。</td>
-        </tr>
-        <tr>
-          <td class="td-name">核心 CPI（4月）</td>
-          <td>2.8% YoY（headline CPI 3.8% YoY，近三年最高）</td>
-          <td class="td-signal sig-warn">⚠ 全面反彈</td>
-          <td class="td-interpret">Headline CPI 3.8% 創近三年新高，能源通膨是主因。核心 CPI 2.8% 亦高於預期，顯示通膨具備韌性，非僅能源一次性干擾。</td>
-        </tr>
-        <tr>
-          <td class="td-name">PPI 整體（4月）</td>
-          <td>6.0% YoY，1.4% MoM</td>
-          <td class="td-signal sig-danger">🔴 重大警示</td>
-          <td class="td-interpret">PPI 6% 為強烈的生產者通膨訊號，約 1–3 個月後傳導至 CPI。若 5-6 月 CPI/PCE 再度超預期，升息機率將跳升至 50% 以上。</td>
-        </tr>
-        <tr>
-          <td class="td-name">核心 PPI（4月）</td>
-          <td>5.2% YoY</td>
-          <td class="td-signal sig-danger">🔴 將傳導至 CPI</td>
-          <td class="td-interpret">剔除能源後的核心 PPI 仍高達 5.2%，代表成本壓力廣泛，非僅伊朗衝突造成的供給衝擊。</td>
-        </tr>
-        <tr>
-          <td class="td-name">油價</td>
-          <td>~$100–110 / 桶，伊朗衝突持續（談判分歧縮小但未達成）</td>
-          <td class="td-signal sig-danger">🔴 地緣風險持續</td>
-          <td class="td-interpret">伊朗-美國談判出現部分進展，但油價仍在高位。若停火協議落定，油價急跌至 $70-80 將是通膨迅速消退的最大催化劑。</td>
-        </tr>
-        <tr>
-          <td class="td-name">S&amp;P 500</td>
-          <td>約 7,400–7,500，接近歷史高位（道瓊 5/21 創紀錄收盤）</td>
-          <td class="td-signal sig-ok">市場選擇無視升息風險</td>
-          <td class="td-interpret">市場以「盈餘驅動」邏輯壓過利率風險。股市強韌但與利率債市出現分歧，兩者難以長期並存。</td>
-        </tr>
-        <tr>
-          <td class="td-name">Forward P/E</td>
-          <td>20.9x（5年均值 19.9x，10年均值 18.9x）</td>
-          <td class="td-signal sig-warn">⚠ 估值偏高</td>
-          <td class="td-interpret">若升息情境成真，P/E 將壓縮回歷史均值 18.9x，對應 S&P 500 下修目標約 6,800（較高點約 -9%）。</td>
-        </tr>
-        <tr>
-          <td class="td-name">Q1 財報超預期率</td>
-          <td>83%（長期均值 67%）</td>
-          <td class="td-signal sig-ok">✅ 盈餘動能極強</td>
-          <td class="td-interpret">財報超預期率遠高於歷史均值，是當前多頭最堅實的防護盾。但市場反應已相對鈍化，邊際效益遞減。</td>
-        </tr>
-        <tr>
-          <td class="td-name">2026 EPS 成長預估</td>
-          <td>+28.6%（4月前估 14.4%，大幅上調）</td>
-          <td class="td-signal sig-ok">✅ 盈餘驅動牛市核心支柱</td>
-          <td class="td-interpret">AI 資本支出週期帶動 EPS 上調幅度遠超預期，此為盈餘驅動牛市的定義性特徵，使升息造成的 P/E 壓縮有望被 EPS 成長吸收。</td>
-        </tr>
-      </tbody>
-    </table></div>
-
-  </div><!-- /小節三 -->
-
-  <!-- 小節四：背景判讀 -->
-  <div class="subsection">
-    <div class="subsection-title">小節四：當前市場背景綜合判讀</div>
-    <div class="context-box">
-      <div class="context-box-title">📊 這是一場什麼性質的多頭？</div>
-      <div class="context-box-text">• 當前牛市的關鍵特徵是<strong>盈餘驅動而非流動性驅動</strong>。2020–2021 年靠 QE 推高 P/E（18x → 22x）；當前靠 EPS 實質成長（$180 → $280+），連續六季雙位數盈餘增長。在盈餘驅動的牛市中，升息壓縮估值倍數，但並不摧毀盈餘，因此下跌空間相對有限，每次修正都會吸引觀望資金進場。目前約有 8 兆美元停放在貨幣市場基金，是潛在的巨大買盤。</div>
-    </div>
-    <div class="notes-grid" style="margin-top:14px">
-      <div class="note-card">
-        <div class="note-card-label warning">▸ 最大風險</div>
-        <div class="note-card-body">PPI 6% 傳導至 CPI → 5-6月核心數據超預期 → FedWatch 升息機率破 50%。此路徑將觸發 S&P 500 急跌 10-15%，估值從 20.9x 壓縮至 18.9x。</div>
-      </div>
-      <div class="note-card">
-        <div class="note-card-label leading">▸ 最大支撐</div>
-        <div class="note-card-body">EPS 成長 +28.6%、83% 財報超預期率、8 兆美元貨幣市場資金待機，每次回調都有強勁承接。AI 週期不依賴降息，科技/半導體主導地位穩固。</div>
-      </div>
-      <div class="note-card">
-        <div class="note-card-label key">▸ 關鍵觀察哨</div>
-        <div class="note-card-body">① Term SOFR 12M 是否突破 4%<br>② 5-6月核心 PCE 是否再次 ≥ 0.3% MoM<br>③ 伊朗油價是否在 $80 以下<br>兩者同步觸發，升息情境即升格為基本情境。</div>
-      </div>
-    </div>
-
-      <!-- 小節五：三種情境 -->
-  <div class="subsection" style="margin-top:22px">
-    <div class="subsection-title">小節五：三種 Fed 政策情境對股市的影響</div>
-    <p style="font-size:.82em;color:var(--text3);margin-bottom:16px;font-family:var(--mono)">點擊卡片上的 ▼ 倒三角展開完整內容。<span style="color:var(--danger)">🔴</span> 閃爍表示觸發條件已出現。</p>
-    <div class="scenario-grid-h">
-
-      <!-- 情境一：維持不動 -->
-      <div class="scen-card scen-card-hold">
-        <div class="scen-summary" onclick="toggleScen(this)">
-          <div class="scen-summary-top">
-            <span class="scenario-badge badge-hold">基本情境</span>
-            <span class="scen-prob prob-hold">60–65%</span>
-            <button class="breathe-btn breathe-hold" title="點擊展開內容"><span class="breathe-dot"></span></button>
-          </div>
-          <div class="scen-card-title">維持不動，降息延後至 2027+</div>
-          <div class="scen-card-desc">核心 PCE 月增率維持 0.2–0.3%，就業維持脆弱平衡，油價高位震盪但未繼續飆升。</div>
-          <div class="scen-verdict-tag vtag-hold">短震盪 · 長多頭</div>
-        </div>
-        <div class="scen-detail" id="scen-hold-d">
-          <div class="scen-col-title">觸發條件</div>
-          <ul class="scen-list-v">
-            <li>核心 PCE 月增率維持在 0.2–0.3% 之間，未再加速</li>
-            <li>就業市場維持「低聘僱、低裁員」的脆弱平衡</li>
-            <li>油價在 $100–110 高位震盪但未繼續飆升</li>
-            <li>市場已消化「高利率更久」預期，無新衝擊</li>
-          </ul>
-          <div class="scen-col-title">股市影響</div>
-          <ul class="scen-list-v">
-            <li>短期：中性至輕微震盪，市場已定價此情境</li>
-            <li>中長期：盈餘成長（EPS +28.6%）持續消化 20.9x 估值</li>
-            <li>AI 資本支出週期不依賴降息，科技/半導體維持主導</li>
-            <li>8 兆美元貨幣市場資金在每次回調中充當買盤</li>
-            <li>景氣定位：榮景期中期，格局 2 至格局 3 過渡</li>
-            <li>操作：股市仍是最佳標的，但水位應隨漲勢遞減</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- 情境二：升息（部分觸發） -->
-      <div class="scen-card scen-card-hike">
-        <div class="scen-summary" onclick="toggleScen(this)">
-          <div class="scen-summary-top">
-            <span class="scenario-badge badge-hike">升息情境</span>
-            <span class="scen-prob prob-hike">25–40% ↑</span>
-            <button class="breathe-btn breathe-hike" title="點擊展開內容"><span class="breathe-dot"></span></button>
-          </div>
-          <div class="scen-card-title">Q4 升息一碼至 3.75–4.00%</div>
-          <div class="scen-card-desc">PPI 6% 傳導至 CPI，通膨全面反彈，FedWatch 升息機率逼近 50%。<br><strong style="color:var(--danger);font-size:.85em">⚠ 部分觸發條件已出現</strong></div>
-          <div class="scen-verdict-tag vtag-hike">短空急殺 · 後續分歧</div>
-        </div>
-        <div class="scen-detail" id="scen-hike-d">
-          <div class="scen-col-title">觸發條件（🔴 = 已觸發）</div>
-          <ul class="scen-list-v">
-            <li class="trigger-fire"><span class="fire-dot"></span>PPI 整體 6.0% YoY — 已觸發，傳導倒計時啟動</li>
-            <li class="trigger-fire"><span class="fire-dot"></span>Headline CPI 3.8%（4月），創近三年高 — 已觸發</li>
-            <li>5–6 月核心 CPI/PCE 再度超預期 — 觀察中（6/11、6/27 公布）</li>
-            <li>FedWatch 12月升息機率突破 50% — 目前 41.8%，接近門檻</li>
-            <li>Term SOFR 12M 明顯突破 4% — 持續監控中</li>
-          </ul>
-          <div class="scen-col-title">若為一次性升息了結</div>
-          <ul class="scen-list-v">
-            <li>伊朗衝突緩和，油價回落至 $80 以下</li>
-            <li>Fed 升息後明確暗示暫停，結果：<strong style="color:var(--scen-cut-c)">短空深 V，長線強買點</strong></li>
-            <li>8 兆美元資金在修正中快速湧入</li>
-          </ul>
-          <div class="scen-col-title">若為升息週期重啟</div>
-          <ul class="scen-list-v">
-            <li>Forward P/E 從 20.9x 壓縮至歷史均值 18.9x</li>
-            <li>對應 S&amp;P 500 下修目標約 6,800（較高點 -9%）</li>
-            <li>結果：<strong style="color:var(--scen-hike-c)">估值修正型熊市，非衰退</strong></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- 情境三：降息 -->
-      <div class="scen-card scen-card-cut">
-        <div class="scen-summary" onclick="toggleScen(this)">
-          <div class="scen-summary-top">
-            <span class="scenario-badge badge-cut">降息情境</span>
-            <span class="scen-prob prob-cut">5–10%</span>
-            <button class="breathe-btn breathe-cut" title="點擊展開內容"><span class="breathe-dot"></span></button>
-          </div>
-          <div class="scen-card-title">重新啟動降息</div>
-          <div class="scen-card-desc">伊朗停火 + 油價急跌 → 通膨自然回落（軟著陸）；或景氣惡化被迫降息（機率極低）。</div>
-          <div class="scen-verdict-tag vtag-cut">需分子情境判斷</div>
-        </div>
-        <div class="scen-detail" id="scen-cut-d">
-          <div class="scen-col-title">子情境 A：通膨消退 · 軟著陸（機率偏高）</div>
-          <ul class="scen-list-v">
-            <li>伊朗達成停火，油價從 $110 急跌至 $70 以下</li>
-            <li>通膨自然回落至 2% 附近，降息有正當性</li>
-            <li>AI 盈餘週期持續，非因衰退被迫降息</li>
-            <li>P/E 可向上重新擴張，S&amp;P 500 挑戰 9,000</li>
-            <li>結果：<strong style="color:var(--scen-cut-c)">長多頭確立，格局 1 回歸</strong></li>
-          </ul>
-          <div class="scen-col-title">子情境 B：衰退迫近 · 被迫降息（機率極低）</div>
-          <ul class="scen-list-v">
-            <li>高油價壓垮消費需求，失業率快速上升</li>
-            <li>AI 資本支出週期被迫中斷，盈餘下修</li>
-            <li>20.9x P/E 面臨雙殺（倍數收縮 + EPS 下修）</li>
-            <li>結果：<strong style="color:var(--danger)">步入衰退，格局 4，大幅減股佈局長債</strong></li>
-          </ul>
-        </div>
-      </div>
-
-    </div><!-- /scenario-grid-h -->
-
-
-    <div class="conclusion-box">
-      <div class="conclusion-box-title">綜合結論</div>
-      <div class="conclusion-box-text">• 當前市場處於「盈餘強勁 vs 通膨頑固」的拔河之中，市場選擇相信前者，但通膨數據正在積累升息的彈藥。最值得警惕的路徑是：PPI 6% 在 1–2 個月內傳導至 CPI，5 月或 6 月核心數據再度超預期，FedWatch 升息機率突破 50%——屆時將觸發不得不正視的急殺。<br><br>• 但只要 AI 盈餘週期不中斷，那次急跌仍應被視為買點，而非衰退的起點。最關鍵的觀察哨：<strong style="color:var(--accent2)">Term SOFR 12M 是否突破 4%、核心 PCE 5–6 月是否再次 ≥ 0.3% MoM</strong>。兩者同步觸發，升息情境即升格為基本情境。</div>
-    </div>
-  </div>
 </div>
 </div>
+
 
 </main>
 
