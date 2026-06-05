@@ -70,17 +70,20 @@
   --scen-cut-bg:rgba(0,122,96,.05);--scen-cut-b:rgba(0,122,96,.22);--scen-cut-c:#007a60;
 }
 
-/* ═══ FONT SIZE ═══ */
-[data-size="lg"] body{font-size:24px}
-[data-size="md"] body{font-size:21px}
-[data-size="sm"] body{font-size:18px}
-[data-size="lg"] table{font-size:20px}[data-size="md"] table{font-size:17px}[data-size="sm"] table{font-size:15px}
-[data-size="lg"] .section-title{font-size:24px}[data-size="md"] .section-title{font-size:21px}[data-size="sm"] .section-title{font-size:18px}
-[data-size="lg"] .hero-title{font-size:40px}[data-size="md"] .hero-title{font-size:34px}[data-size="sm"] .hero-title{font-size:28px}
-
-
 /* ═══ COPY / RIGHT-CLICK PROTECTION ═══ */
 body{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+
+/* ═══ FONT SIZE ═══ */
+[data-size="lg"] body{font-size:27px}
+[data-size="md"] body{font-size:24px}
+[data-size="sm"] body{font-size:21px}
+[data-size="lg"] table{font-size:22px}[data-size="md"] table{font-size:19px}[data-size="sm"] table{font-size:17px}
+[data-size="lg"] .section-title{font-size:24px}[data-size="md"] .section-title{font-size:21px}[data-size="sm"] .section-title{font-size:18px}
+[data-size="lg"] .hero-title{font-size:40px}[data-size="md"] .hero-title{font-size:34px}[data-size="sm"] .hero-title{font-size:28px}
+/* 固定不隨 sm/md/lg 縮放的元素 */
+nav a{font-size:14px!important}
+.subsection-title,.td-id-inline,.izy-badge-text,.nav-brand-title{font-size:14px!important}
+.ctrl-btn{font-size:12px!important}
 
 /* ═══ RESET ═══ */
 *{margin:0;padding:0;box-sizing:border-box}
@@ -389,7 +392,7 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
 @media(max-width:800px){.phase-cols{grid-template-columns:1fr}}
 .phase-col{display:flex;flex-direction:column;gap:12px}
 .phase-temp{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:14px 0 10px}
-.phase-temp-title{font-family:var(--mono);font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--text3);padding:0 18px 8px;border-bottom:1px solid var(--border);margin-bottom:0}
+.phase-temp-title{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--text3);padding:0 18px 8px;border-bottom:1px solid var(--border);margin-bottom:0}
 .mfg-temp-wrap{padding-top:4px}
 /* 製造業溫度條呼吸燈（藍色） */
 @keyframes mfgTempPulse{0%,100%{box-shadow:0 0 4px 2px rgba(77,159,255,.2);opacity:.7;transform:scale(.88)}50%{box-shadow:0 0 14px 6px rgba(77,159,255,.7);opacity:1;transform:scale(1)}}
@@ -401,7 +404,7 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
 .market-wave-wrap{margin-top:22px;padding:0}
 .market-wave-title-row{display:flex;align-items:baseline;gap:16px;margin-bottom:10px;font-family:var(--mono)}
 .market-wave-title-row>span:first-child{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--text2);font-weight:600}
-.market-wave-sub{font-size:8.5px;color:var(--text3);letter-spacing:.06em}
+.market-wave-sub{font-size:12px;color:var(--text3);letter-spacing:.06em}
 .market-wave-svg{width:100%;height:auto;display:block;overflow:visible;border-radius:6px}
 .market-wave-notes{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
 @media(max-width:700px){.market-wave-notes{grid-template-columns:1fr}}
@@ -409,7 +412,7 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
 .mw-note-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0;margin-top:3px;animation:tempPulse 2s ease-in-out infinite}
 .mw-dot-biz{background:#f0a500;box-shadow:0 0 6px rgba(240,165,0,.5);border:2px solid #fff}
 .mw-dot-mfg{background:#00c8a0;box-shadow:0 0 6px rgba(0,200,160,.5);border:2px solid #fff}
-.mw-note-title{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px}
+.mw-note-title{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px}
 .mw-note-biz .mw-note-title{color:#f0a500}
 .mw-note-mfg .mw-note-title{color:#00c8a0}
 .mw-note-text{font-size:.82em;color:var(--text2);line-height:1.6}
@@ -424,7 +427,7 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
 /* ═══ SIN WAVE CYCLE ═══ */
 .sin-wave-wrap{width:100%;background:var(--bg2);border-bottom:1px solid var(--border);padding:14px 0;transition:background .25s}
 .sin-wave-inner{padding:0 48px}
-.sin-wave-title{font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--text3);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.sin-wave-title{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--text3);margin-bottom:10px;display:flex;align-items:center;gap:8px}
 .sin-wave-title::before{content:'';width:18px;height:1px;background:var(--text3)}
 .sin-wave-svg{width:100%;height:auto;display:block;overflow:visible}
 .sin-curr-note{font-family:var(--mono);font-size:9px;color:var(--accent2);margin-top:8px}
@@ -440,7 +443,7 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
 }
 .temp-bar-inner{max-width:100%;padding:0 48px}
 .temp-bar-label-row{display:flex;justify-content:space-between;margin-bottom:6px}
-.temp-bar-label{font-family:var(--mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+.temp-bar-label{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
 .tbl-recovery{color:#00c8a0}.tbl-growth{color:#4d9fff}.tbl-boom{color:#f0a500}.tbl-recession{color:#ff4d6d}
 .temp-bar-track{
   position:relative;height:14px;border-radius:8px;overflow:visible;
@@ -477,7 +480,7 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
 }
 .temp-pointer-label{
   position:absolute;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);
-  font-family:var(--mono);font-size:9px;letter-spacing:.06em;
+  font-family:var(--mono);font-size:12px;letter-spacing:.06em;
   background:#f0a500;color:#080b10;padding:2px 8px;border-radius:3px;white-space:nowrap;
   font-weight:700;
 }
@@ -485,8 +488,8 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
   content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);
   border:4px solid transparent;border-top-color:#f0a500;
 }
-.temp-bar-footer{display:flex;justify-content:space-between;margin-top:6px;font-family:var(--mono);font-size:8.5px;color:var(--text3)}
-.temp-curr-note{font-family:var(--mono);font-size:9px;color:var(--accent2);margin-top:5px;letter-spacing:.04em}
+.temp-bar-footer{display:flex;justify-content:space-between;margin-top:6px;font-family:var(--mono);font-size:12px;color:var(--text3)}
+.temp-curr-note{font-family:var(--mono);font-size:12px;color:var(--accent2);margin-top:5px;letter-spacing:.04em}
 @media(max-width:900px){.temp-bar-inner{padding:0 18px}}
 
 
@@ -505,7 +508,7 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
 .sec-tab.active{border-color:var(--accent3);
   box-shadow:0 0 0 2px rgba(77,159,255,.2),0 2px 14px rgba(0,0,0,.18)}
 .sec-tab-header{display:flex;align-items:center;gap:10px;padding:14px 16px 10px}
-.sec-tab-num{font-family:var(--mono);font-size:9.5px;color:var(--text3);
+.sec-tab-num{font-family:var(--mono);font-size:12px;color:var(--text3);
   background:var(--bg3);border:1px solid var(--border);border-radius:4px;
   padding:3px 8px;white-space:nowrap;transition:all .18s}
 .sec-tab.active .sec-tab-num{color:var(--accent3);
@@ -515,7 +518,7 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
 .sec-tab-arrow{font-size:11px;color:var(--text3);transition:transform .2s,color .18s}
 .sec-tab.active .sec-tab-arrow{transform:rotate(180deg);color:var(--accent3)}
 .sec-tab-indicators{padding:0 16px 14px;display:flex;flex-wrap:wrap;gap:5px}
-.sec-ind-chip{font-family:var(--mono);font-size:9px;background:var(--bg3);
+.sec-ind-chip{font-family:var(--mono);font-size:12px;background:var(--bg3);
   color:var(--text3);border:1px solid var(--border);border-radius:3px;
   padding:2px 7px;white-space:nowrap;transition:all .18s}
 .sec-tab.active .sec-ind-chip{color:var(--accent3);
@@ -534,6 +537,15 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
 .subsection-summary strong{color:var(--accent2)}
 /* 來源/連結合併欄 */
 .td-id-inline{font-family:var(--mono);font-size:10px;color:var(--accent3);display:block;margin-bottom:3px}
+
+
+/* ═══ ARROW BREATHE ═══ */
+@keyframes arrowBreathe{
+  0%,100%{opacity:.3;filter:none}
+  50%{opacity:1;filter:drop-shadow(0 0 4px var(--accent3))}
+}
+.sec-tab-arrow{animation:arrowBreathe 2s ease-in-out infinite}
+.sec-tab.active .sec-tab-arrow{animation:none;opacity:1;color:var(--accent3)}
 
 /* SCROLLBAR */
 ::-webkit-scrollbar{width:5px;height:5px}
@@ -570,18 +582,16 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
     <div class="nav-brand-sub">▸ 2026 · MAY</div>
   </div>
   <div class="nav-section-label">監控指標</div>
-  <a href="#sec-market-phase"><span class="nav-num">00</span><div class="nav-dot"></div>市場位階</a>
-  <a href="#" onclick="navClickSec('sec-valuation');return false;"><span class="nav-num">01</span><div class="nav-dot"></div>市場估值</a>
-  <a href="#" onclick="navClickSec('sec-gdp');return false;"><span class="nav-num">02</span><div class="nav-dot"></div>GDP 與宏觀</a>
-  <a href="#" onclick="navClickSec('sec-employment');return false;"><span class="nav-num">03</span><div class="nav-dot"></div>就業市場</a>
-  <a href="#" onclick="navClickSec('sec-inflation');return false;"><span class="nav-num">04</span><div class="nav-dot"></div>通貨膨脹</a>
-  <a href="#" onclick="navClickSec('sec-pmi');return false;"><span class="nav-num">05</span><div class="nav-dot"></div>PMI 景氣</a>
-  <a href="#" onclick="navClickSec('sec-earnings');return false;"><span class="nav-num">06</span><div class="nav-dot"></div>企業獲利</a>
-  <a href="#" onclick="navClickSec('sec-risk');return false;"><span class="nav-num">07</span><div class="nav-dot"></div>風險與流動性</a>
-  <a href="#" onclick="navClickSec('sec-fed');return false;"><span class="nav-num">08</span><div class="nav-dot"></div>FED 升/降息意向判斷</a>
-  <div class="nav-section-label">框架</div>
-  <a href="#" onclick="navClickSec('sec-framework');return false;"><span class="nav-num">▶</span><div class="nav-dot"></div>先行 vs 滯後</a>
-  <a href="#" onclick="navClickSec('sec-framework');return false;"><span class="nav-num">★</span><div class="nav-dot"></div>景氣循環框架</a>
+    <a href="#" onclick="navClickSec('sec-framework');return false;"><span class="nav-num">01</span><div class="nav-dot"></div>景氣循環投資框架</a>
+  <a href="#" onclick="navClickSec('sec-valuation');return false;"><span class="nav-num">02</span><div class="nav-dot"></div>市場估值</a>
+  <a href="#" onclick="navClickSec('sec-gdp');return false;"><span class="nav-num">03</span><div class="nav-dot"></div>GDP 與宏觀</a>
+  <a href="#" onclick="navClickSec('sec-employment');return false;"><span class="nav-num">04</span><div class="nav-dot"></div>就業市場</a>
+  <a href="#" onclick="navClickSec('sec-inflation');return false;"><span class="nav-num">05</span><div class="nav-dot"></div>通貨膨脹</a>
+  <a href="#" onclick="navClickSec('sec-pmi');return false;"><span class="nav-num">06</span><div class="nav-dot"></div>PMI 景氣</a>
+  <a href="#" onclick="navClickSec('sec-earnings');return false;"><span class="nav-num">07</span><div class="nav-dot"></div>企業獲利</a>
+  <a href="#" onclick="navClickSec('sec-risk');return false;"><span class="nav-num">08</span><div class="nav-dot"></div>風險與流動性</a>
+  <a href="#" onclick="navClickSec('sec-fed');return false;"><span class="nav-num">09</span><div class="nav-dot"></div>FED 升/降息意向</a>
+
   <div class="izy-section">
     <div class="izy-badge">
       <div class="izy-badge-label">資料來源</div>
@@ -609,7 +619,7 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
         <div class="mw-note-dot mw-dot-biz"></div>
         <div>
           <div class="mw-note-title">景氣大循環位階</div>
-          <div class="mw-note-text">榮景期前中段（格局 3）— EPS +28.6%、S&amp;P 500 歷史高位，製造業擴張期中段。產能利用率 75.8%（距過熱門檻 82% 仍差 6–7%），ULC 可控，FedWatch 升息機率 41.8%。牛市三要素均未出現，多頭仍在，距頂端仍有 1–2 年。</div>
+          <div class="mw-note-text">榮景期前中段（格局 3）— EPS +28.6%、S&amp;P 500 歷史高位，製造業擴張期中段。產能利用率 75.8%（距過熱門檻 82% 仍差 6–7%），ULC 可控，FedWatch 升息機率 41.8%。三個警示均未出現，多頭仍在，距頂端仍有 1–2 年。</div>
         </div>
       </div>
       <div class="phase-temp">
@@ -696,11 +706,11 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
       <line x1="310" y1="0" x2="310" y2="200" stroke="rgba(255,255,255,.1)" stroke-width="1" stroke-dasharray="3,3"/>
       <line x1="490" y1="0" x2="490" y2="200" stroke="rgba(255,255,255,.1)" stroke-width="1" stroke-dasharray="3,3"/>
       <line x1="680" y1="0" x2="680" y2="200" stroke="rgba(255,255,255,.1)" stroke-width="1" stroke-dasharray="3,3"/>
-      <line x1="0" y1="100" x2="900" y2="100" stroke="rgba(255,255,255,.07)" stroke-width="1" stroke-dasharray="4,4"/><text x="60.0" y="15" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#ff4d6d" font-weight="600">⚠ 衰退期</text>
-      <text x="215.0" y="15" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#00c8a0" font-weight="600">🌱 復甦期</text>
-      <text x="400.0" y="15" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#4d9fff" font-weight="600">📈 成長期</text>
-      <text x="585.0" y="15" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#f0a500" font-weight="600">🔥 榮景期</text>
-      <text x="790.0" y="15" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#ff4d6d" font-weight="600">⚠ 衰退期</text>
+      <line x1="0" y1="100" x2="900" y2="100" stroke="rgba(255,255,255,.07)" stroke-width="1" stroke-dasharray="4,4"/><text x="60.0" y="15" text-anchor="middle" font-family="IBM Plex Mono,monospace"   fill="#ff4d6d" font-weight="600" font-size="12">⚠ 衰退期</text>
+      <text x="215.0" y="15" text-anchor="middle" font-family="IBM Plex Mono,monospace"   fill="#00c8a0" font-weight="600" font-size="12">🌱 復甦期</text>
+      <text x="400.0" y="15" text-anchor="middle" font-family="IBM Plex Mono,monospace"   fill="#4d9fff" font-weight="600" font-size="12">📈 成長期</text>
+      <text x="585.0" y="15" text-anchor="middle" font-family="IBM Plex Mono,monospace"   fill="#f0a500" font-weight="600" font-size="12">🔥 榮景期</text>
+      <text x="790.0" y="15" text-anchor="middle" font-family="IBM Plex Mono,monospace"   fill="#ff4d6d" font-weight="600" font-size="12">⚠ 衰退期</text>
       
       <defs><linearGradient id="lgGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(255,255,255,.05)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></linearGradient></defs>
       <path d="M 0,150.8 L 2,151.3 L 4,151.7 L 6,152.2 L 8,152.6 L 10,153.0 L 12,153.4 L 14,153.8 L 16,154.2 L 18,154.6 L 20,155.0 L 22,155.4 L 24,155.8 L 26,156.2 L 28,156.5 L 30,156.9 L 32,157.2 L 34,157.6 L 36,157.9 L 38,158.2 L 40,158.6 L 42,158.9 L 44,159.2 L 46,159.5 L 48,159.8 L 50,160.1 L 52,160.3 L 54,160.6 L 56,160.9 L 58,161.1 L 60,161.4 L 62,161.6 L 64,161.8 L 66,162.0 L 68,162.3 L 70,162.5 L 72,162.7 L 74,162.8 L 76,163.0 L 78,163.2 L 80,163.4 L 82,163.5 L 84,163.7 L 86,163.8 L 88,164.0 L 90,164.1 L 92,164.2 L 94,164.3 L 96,164.4 L 98,164.5 L 100,164.6 L 102,164.7 L 104,164.7 L 106,164.8 L 108,164.9 L 110,164.9 L 112,164.9 L 114,165.0 L 116,165.0 L 118,165.0 L 120,165.0 L 122,165.0 L 124,165.0 L 126,165.0 L 128,164.9 L 130,164.9 L 132,164.9 L 134,164.8 L 136,164.7 L 138,164.7 L 140,164.6 L 142,164.5 L 144,164.4 L 146,164.3 L 148,164.2 L 150,164.1 L 152,164.0 L 154,163.8 L 156,163.7 L 158,163.5 L 160,163.4 L 162,163.2 L 164,163.0 L 166,162.8 L 168,162.7 L 170,162.5 L 172,162.3 L 174,162.0 L 176,161.8 L 178,161.6 L 180,161.4 L 182,161.1 L 184,160.9 L 186,160.6 L 188,160.3 L 190,160.1 L 192,159.8 L 194,159.5 L 196,159.2 L 198,158.9 L 200,158.6 L 202,158.2 L 204,157.9 L 206,157.6 L 208,157.2 L 210,156.9 L 212,156.5 L 214,156.2 L 216,155.8 L 218,155.4 L 220,155.0 L 222,154.6 L 224,154.2 L 226,153.8 L 228,153.4 L 230,153.0 L 232,152.6 L 234,152.2 L 236,151.7 L 238,151.3 L 240,150.8 L 242,150.4 L 244,149.9 L 246,149.4 L 248,148.9 L 250,148.5 L 252,148.0 L 254,147.5 L 256,147.0 L 258,146.5 L 260,146.0 L 262,145.4 L 264,144.9 L 266,144.4 L 268,143.9 L 270,143.3 L 272,142.8 L 274,142.2 L 276,141.7 L 278,141.1 L 280,140.5 L 282,140.0 L 284,139.4 L 286,138.8 L 288,138.2 L 290,137.6 L 292,137.0 L 294,136.4 L 296,135.8 L 298,135.2 L 300,134.6 L 302,134.0 L 304,133.3 L 306,132.7 L 308,132.1 L 310,131.4 L 312,130.8 L 314,130.2 L 316,129.5 L 318,128.9 L 320,128.2 L 322,127.5 L 324,126.9 L 326,126.2 L 328,125.5 L 330,124.9 L 332,124.2 L 334,123.5 L 336,122.8 L 338,122.2 L 340,121.5 L 342,120.8 L 344,120.1 L 346,119.4 L 348,118.7 L 350,118.0 L 352,117.3 L 354,116.6 L 356,115.9 L 358,115.2 L 360,114.5 L 362,113.8 L 364,113.0 L 366,112.3 L 368,111.6 L 370,110.9 L 372,110.2 L 374,109.4 L 376,108.7 L 378,108.0 L 380,107.3 L 382,106.6 L 384,105.8 L 386,105.1 L 388,104.4 L 390,103.6 L 392,102.9 L 394,102.2 L 396,101.5 L 398,100.7 L 400,100.0 L 402,99.3 L 404,98.5 L 406,97.8 L 408,97.1 L 410,96.4 L 412,95.6 L 414,94.9 L 416,94.2 L 418,93.4 L 420,92.7 L 422,92.0 L 424,91.3 L 426,90.6 L 428,89.8 L 430,89.1 L 432,88.4 L 434,87.7 L 436,87.0 L 438,86.2 L 440,85.5 L 442,84.8 L 444,84.1 L 446,83.4 L 448,82.7 L 450,82.0 L 452,81.3 L 454,80.6 L 456,79.9 L 458,79.2 L 460,78.5 L 462,77.8 L 464,77.2 L 466,76.5 L 468,75.8 L 470,75.1 L 472,74.5 L 474,73.8 L 476,73.1 L 478,72.5 L 480,71.8 L 482,71.1 L 484,70.5 L 486,69.8 L 488,69.2 L 490,68.6 L 492,67.9 L 494,67.3 L 496,66.7 L 498,66.0 L 500,65.4 L 502,64.8 L 504,64.2 L 506,63.6 L 508,63.0 L 510,62.4 L 512,61.8 L 514,61.2 L 516,60.6 L 518,60.0 L 520,59.5 L 522,58.9 L 524,58.3 L 526,57.8 L 528,57.2 L 530,56.7 L 532,56.1 L 534,55.6 L 536,55.1 L 538,54.6 L 540,54.0 L 542,53.5 L 544,53.0 L 546,52.5 L 548,52.0 L 550,51.5 L 552,51.1 L 554,50.6 L 556,50.1 L 558,49.6 L 560,49.2 L 562,48.7 L 564,48.3 L 566,47.8 L 568,47.4 L 570,47.0 L 572,46.6 L 574,46.2 L 576,45.8 L 578,45.4 L 580,45.0 L 582,44.6 L 584,44.2 L 586,43.8 L 588,43.5 L 590,43.1 L 592,42.8 L 594,42.4 L 596,42.1 L 598,41.8 L 600,41.4 L 602,41.1 L 604,40.8 L 606,40.5 L 608,40.2 L 610,39.9 L 612,39.7 L 614,39.4 L 616,39.1 L 618,38.9 L 620,38.6 L 622,38.4 L 624,38.2 L 626,38.0 L 628,37.7 L 630,37.5 L 632,37.3 L 634,37.2 L 636,37.0 L 638,36.8 L 640,36.6 L 642,36.5 L 644,36.3 L 646,36.2 L 648,36.0 L 650,35.9 L 652,35.8 L 654,35.7 L 656,35.6 L 658,35.5 L 660,35.4 L 662,35.3 L 664,35.3 L 666,35.2 L 668,35.1 L 670,35.1 L 672,35.1 L 674,35.0 L 676,35.0 L 678,35.0 L 680,35.0 L 682,35.0 L 684,35.0 L 686,35.0 L 688,35.1 L 690,35.1 L 692,35.1 L 694,35.2 L 696,35.3 L 698,35.3 L 700,35.4 L 702,35.5 L 704,35.6 L 706,35.7 L 708,35.8 L 710,35.9 L 712,36.0 L 714,36.2 L 716,36.3 L 718,36.5 L 720,36.6 L 722,36.8 L 724,37.0 L 726,37.2 L 728,37.3 L 730,37.5 L 732,37.7 L 734,38.0 L 736,38.2 L 738,38.4 L 740,38.6 L 742,38.9 L 744,39.1 L 746,39.4 L 748,39.7 L 750,39.9 L 752,40.2 L 754,40.5 L 756,40.8 L 758,41.1 L 760,41.4 L 762,41.8 L 764,42.1 L 766,42.4 L 768,42.8 L 770,43.1 L 772,43.5 L 774,43.8 L 776,44.2 L 778,44.6 L 780,45.0 L 782,45.4 L 784,45.8 L 786,46.2 L 788,46.6 L 790,47.0 L 792,47.4 L 794,47.8 L 796,48.3 L 798,48.7 L 800,49.2 L 802,49.6 L 804,50.1 L 806,50.6 L 808,51.1 L 810,51.5 L 812,52.0 L 814,52.5 L 816,53.0 L 818,53.5 L 820,54.0 L 822,54.6 L 824,55.1 L 826,55.6 L 828,56.1 L 830,56.7 L 832,57.2 L 834,57.8 L 836,58.3 L 838,58.9 L 840,59.5 L 842,60.0 L 844,60.6 L 846,61.2 L 848,61.8 L 850,62.4 L 852,63.0 L 854,63.6 L 856,64.2 L 858,64.8 L 860,65.4 L 862,66.0 L 864,66.7 L 866,67.3 L 868,67.9 L 870,68.6 L 872,69.2 L 874,69.8 L 876,70.5 L 878,71.1 L 880,71.8 L 882,72.5 L 884,73.1 L 886,73.8 L 888,74.5 L 890,75.1 L 892,75.8 L 894,76.5 L 896,77.2 L 898,77.8 L 900,78.5 L 900,200 L 0,200 Z" fill="url(#lgGrad)"/>
@@ -711,21 +721,21 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
         <circle class="biz-dot-pulse" r="9" fill="rgba(240,165,0,.25)"/>
         <circle r="5" fill="#fff" stroke="#f0a500" stroke-width="2.5"/>
         <rect x="-38" y="-36" width="76" height="18" rx="3" fill="#f0a500"/>
-        <text x="0" y="-23" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="7.5" fill="#080b10" font-weight="700">景氣大循環位階</text>
+        <text x="0" y="-23" text-anchor="middle" font-family="IBM Plex Mono,monospace"   fill="#080b10" font-weight="700" font-size="12">景氣大循環位階</text>
         <line x1="0" y1="-18" x2="0" y2="-5" stroke="#f0a500" stroke-width="1.5"/>
       </g>
       <g transform="translate(545,47.9)">
         <circle class="mfg-dot-pulse" r="7" fill="rgba(77,159,255,.25)"/>
         <circle r="4.5" fill="#fff" stroke="#4d9fff" stroke-width="2"/>
         <rect x="-38" y="10" width="76" height="18" rx="3" fill="#4d9fff"/>
-        <text x="0" y="23" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="7.5" fill="#080b10" font-weight="700">製造業週期位階</text>
+        <text x="0" y="23" text-anchor="middle" font-family="IBM Plex Mono,monospace"   fill="#080b10" font-weight="700" font-size="12">製造業週期位階</text>
         <line x1="0" y1="5" x2="0" y2="10" stroke="#4d9fff" stroke-width="1.5"/>
       </g>
       <rect x="690" y="145" width="205" height="50" fill="rgba(0,0,0,.28)" rx="4"/>
       <line x1="698" y1="159" x2="728" y2="159" stroke="#f0a500" stroke-width="2.5"/>
-      <text x="734" y="163" font-family="IBM Plex Mono,monospace" font-size="8" fill="#f0a500">景氣大循環（7-10Y）</text>
+      <text x="734" y="163" font-family="IBM Plex Mono,monospace"   fill="#f0a500" font-size="12">景氣大循環（7-10Y）</text>
       <line x1="698" y1="178" x2="728" y2="178" stroke="#4d9fff" stroke-width="1.8"/>
-      <text x="734" y="182" font-family="IBM Plex Mono,monospace" font-size="8" fill="#4d9fff">製造業週期（2-4Y）</text>
+      <text x="734" y="182" font-family="IBM Plex Mono,monospace"   fill="#4d9fff" font-size="12">製造業週期（2-4Y）</text>
     </svg>
   </div>
 
@@ -740,30 +750,251 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
 
 <div class="sec-group" id="sec-group-r1">
 <div class="sec-tab-bar cols-3">
-  <div class="sec-tab" id="sec-tab-sec-valuation" onclick="toggleSecTab('r1','sec-valuation')">
+  <div class="sec-tab" id="sec-tab-sec-framework" onclick="toggleSecTab('r1','sec-framework')">
     <div class="sec-tab-header">
       <span class="sec-tab-num">01</span>
+      <span class="sec-tab-title">景氣循環投資框架</span>
+      <span class="sec-tab-arrow">▼</span>
+    </div>
+    <div class="sec-tab-indicators"><span class="sec-ind-chip">先行/同步/滯後指標</span><span class="sec-ind-chip">IZY四格局</span><span class="sec-ind-chip">四大循環</span><span class="sec-ind-chip">公債循環</span><span class="sec-ind-chip">操盤法則</span></div>
+  </div>
+  <div class="sec-tab" id="sec-tab-sec-valuation" onclick="toggleSecTab('r1','sec-valuation')">
+    <div class="sec-tab-header">
+      <span class="sec-tab-num">02</span>
       <span class="sec-tab-title">市場估值</span>
       <span class="sec-tab-arrow">▼</span>
     </div>
-    <div class="sec-tab-indicators"><span class="sec-ind-chip">Forward P/E</span><span class="sec-ind-chip">PEG</span><span class="sec-ind-chip">ERP</span><span class="sec-ind-chip">Rule of 20</span><span class="sec-ind-chip">Shiller CAPE</span><span class="sec-ind-chip">指數泡沫點位</span></div>
+    <div class="sec-tab-indicators"><span class="sec-ind-chip">Forward P/E</span><span class="sec-ind-chip">PEG</span><span class="sec-ind-chip">ERP</span><span class="sec-ind-chip">Rule of 20</span><span class="sec-ind-chip">指數泡沫點位</span></div>
   </div>
   <div class="sec-tab" id="sec-tab-sec-gdp" onclick="toggleSecTab('r1','sec-gdp')">
     <div class="sec-tab-header">
-      <span class="sec-tab-num">02</span>
+      <span class="sec-tab-num">03</span>
       <span class="sec-tab-title">GDP 與宏觀</span>
       <span class="sec-tab-arrow">▼</span>
     </div>
-    <div class="sec-tab-indicators"><span class="sec-ind-chip">GDPNow</span><span class="sec-ind-chip">實質GDP</span><span class="sec-ind-chip">個人消費</span><span class="sec-ind-chip">零售銷售</span><span class="sec-ind-chip">民間投資</span><span class="sec-ind-chip">耐久財訂單</span><span class="sec-ind-chip">進出口</span></div>
+    <div class="sec-tab-indicators"><span class="sec-ind-chip">GDPNow</span><span class="sec-ind-chip">實質GDP</span><span class="sec-ind-chip">個人消費</span><span class="sec-ind-chip">零售銷售</span><span class="sec-ind-chip">民間投資</span><span class="sec-ind-chip">耐久財訂單</span></div>
   </div>
-  <div class="sec-tab" id="sec-tab-sec-employment" onclick="toggleSecTab('r1','sec-employment')">
-    <div class="sec-tab-header">
-      <span class="sec-tab-num">03</span>
-      <span class="sec-tab-title">就業市場</span>
-      <span class="sec-tab-arrow">▼</span>
+</div>
+<div class="sec-panel-wrap" id="sec-panel-sec-framework">
+<div class="content-section" id="sec-framework">
+  <div class="section-header">
+    <div class="section-num">09</div>
+    <div><div class="section-title">景氣循環投資框架</div>
+    <div class="section-desc">Cycle Framework · 指標分類、格局定位與操盤法則</div></div>
+  </div>
+  <div class="content-section" id="sec-quickindex">
+  <div class="section-header">
+    <div class="section-num">▶</div>
+    <div class="section-title-wrap">
+      <div class="section-title">快速索引：指標先行 vs 滯後</div>
+      <div class="section-desc">Leading · Coincident · Lagging Indicators</div>
     </div>
-    <div class="sec-tab-indicators"><span class="sec-ind-chip">非農就業</span><span class="sec-ind-chip">失業率</span><span class="sec-ind-chip">平均時薪</span><span class="sec-ind-chip">ECI</span><span class="sec-ind-chip">單位勞動成本</span><span class="sec-ind-chip">JOLTS</span><span class="sec-ind-chip">初領失業金</span></div>
   </div>
+  <div class="quick-index">
+    <div class="quick-index-row">
+      <div class="quick-index-label qi-leading">領先<br>指標</div>
+      <div class="quick-index-tags">
+        <span class="tag tag-leading">JOLTS 職位空缺</span>
+        <span class="tag tag-leading">初領失業金</span>
+        <span class="tag tag-leading">製造業建築支出</span>
+        <span class="tag tag-leading">WEI 每週指數</span>
+        <span class="tag tag-leading">ISM 新訂單</span>
+        <span class="tag tag-leading">銅金比</span>
+        <span class="tag tag-leading">油金比</span>
+        <span class="tag tag-leading">SOFR 曲線形態</span>
+        <span class="tag tag-leading">Term SOFR 12M−1M 利差</span>
+        <span class="tag tag-leading">2Y 美債殖利率</span>
+        <span class="tag tag-leading">ERP 股票風險溢價</span>
+        <span class="tag tag-leading">Forward EPS 修正趨勢</span>
+      </div>
+    </div>
+    <div class="quick-index-row">
+      <div class="quick-index-label qi-sync">同步<br>指標</div>
+      <div class="quick-index-tags">
+        <span class="tag tag-sync">實質 GDP</span>
+        <span class="tag tag-sync">PCE</span>
+        <span class="tag tag-sync">製造業聘僱</span>
+        <span class="tag tag-sync">ISM 製造業 PMI</span>
+        <span class="tag tag-sync">Forward Revenue per Share</span>
+      </div>
+    </div>
+    <div class="quick-index-row">
+      <div class="quick-index-label qi-lag">滯後<br>指標</div>
+      <div class="quick-index-tags">
+        <span class="tag tag-lag">失業率</span>
+        <span class="tag tag-lag">長期失業人口</span>
+        <span class="tag tag-lag">CPI 房租</span>
+        <span class="tag tag-lag">企業違約率</span>
+        <span class="tag tag-lag">CAPE 席勒本益比</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 景氣循環框架 ══ -->
+<div class="content-section" id="sec-cycle">
+  <div class="section-header">
+    <div class="section-num">★</div>
+    <div class="section-title-wrap">
+      <div class="section-title">景氣循環投資框架</div>
+      <div class="section-desc">Business Cycle Framework · Asset Allocation by Phase</div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-title">四大景氣循環階段深度拆解</div>
+    <div class="cycle-blocks">
+      <div class="cycle-block cycle-recovery">
+        <div class="cycle-block-header"><div class="cycle-icon">🌱</div><div><div class="cycle-block-title">復甦期 · Recovery</div><div class="cycle-block-sub">景氣最壞已過 · 政策紅利全力作多</div></div></div>
+        <div class="cycle-block-body">
+          <div>
+            <div class="cycle-list-title">確認落底的四大現象</div>
+            <ul class="cycle-list">
+              <li>貨幣極度寬鬆：長短利率大幅下滑</li>
+              <li>財政刺激出爐：減稅、擴大政府支出</li>
+              <li>原物料價格低迷：降低生產成本</li>
+              <li>極低基期效應：數據稍好轉，年增率即噴發</li>
+            </ul>
+            <div class="cycle-list-title" style="margin-top:13px">關鍵判斷指標</div>
+            <ul class="cycle-list">
+              <li><strong>就業：</strong>初領失業金高峰即起點</li>
+              <li><strong>消費：</strong>零售銷售與耐久財支出止跌</li>
+              <li><strong>投資：</strong>私人固定資本投資走出低迷</li>
+              <li><strong>外貿：</strong>進口金額年增率回溫</li>
+            </ul>
+          </div>
+          <div>
+            <div class="cycle-list-title">投資策略</div>
+            <ul class="cycle-list">
+              <li>現金不可為王，勇敢進場股市</li>
+              <li>加碼股市、高收益債</li>
+              <li>黃金此時應賣出</li>
+              <li>無風險債券僅剩低息，避開</li>
+            </ul>
+            <div class="cycle-list-title" style="margin-top:13px">資產配置</div>
+            <div class="invest-pills">
+              <span class="invest-pill pill-buy">買進 股市</span>
+              <span class="invest-pill pill-buy">買進 高收益債</span>
+              <span class="invest-pill pill-sell">賣出 黃金</span>
+              <span class="invest-pill pill-sell">避開 美債</span>
+            </div>
+            <div class="warning-box" style="margin-top:13px;border-left-color:var(--accent)"><div class="warning-box-title" style="color:var(--accent)">操盤法則</div><div class="warning-box-text">別在復甦期恐慌。二次衰退的傳言通常只是高基期數據造成的幻象，應持續加碼。</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="cycle-block cycle-growth">
+        <div class="cycle-block-header"><div class="cycle-icon">📈</div><div><div class="cycle-block-title">成長期 · Growth</div><div class="cycle-block-sub">太平盛世 · 時間最長 · 長期佈局最佳期</div></div></div>
+        <div class="cycle-block-body">
+          <div>
+            <div class="cycle-list-title">穩定增長的四大現象</div>
+            <ul class="cycle-list">
+              <li>遞延消費釋放：儲蓄率下降，消費穩定擴張</li>
+              <li>就業循環確立：廠商擴編，良性循環</li>
+              <li>投資良性擴張：企業樂觀，資本投入增加</li>
+              <li>溫和通膨：回升至健康水準，鞏固信心</li>
+            </ul>
+            <div class="warning-box" style="margin-top:13px"><div class="warning-box-title">關鍵警語</div><div class="warning-box-text">此時期風險事件多為「虛驚一場」，不應輕易撤出。本益比超越歷史均值在此階段是正常現象。</div></div>
+          </div>
+          <div>
+            <div class="cycle-list-title">投資策略</div>
+            <ul class="cycle-list">
+              <li>持續買進與持有風險資產</li>
+              <li>股市最佳標的，獲利增長支撐高估值</li>
+              <li>美債大跌期，避開無風險債券</li>
+              <li>原物料初期上揚，後期應避開</li>
+            </ul>
+            <div class="cycle-list-title" style="margin-top:13px">資產配置</div>
+            <div class="invest-pills">
+              <span class="invest-pill pill-buy">持續 股市</span>
+              <span class="invest-pill pill-sell">避開 美債</span>
+              <span class="invest-pill pill-hold">初期 原物料</span>
+            </div>
+            <div class="warning-box" style="margin-top:13px;border-left-color:var(--accent3)"><div class="warning-box-title" style="color:var(--accent3)">操盤法則</div><div class="warning-box-text">別在成長期嫌貴。企業獲利增長會消弭昂貴的本益比，此時期風險事件多為「虛驚一場」，不應輕易撤出。</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="cycle-block cycle-boom">
+        <div class="cycle-block-header"><div class="cycle-icon">🔥</div><div><div class="cycle-block-title">榮景期 · Prosperity</div><div class="cycle-block-sub">景氣最後高潮 · 加速成長 · 風險意識喪失</div></div></div>
+        <div class="cycle-block-body">
+          <div>
+            <div class="cycle-list-title">榮景期的判斷指標</div>
+            <ul class="cycle-list">
+              <li>消費大於收入：透支消費成形</li>
+              <li><strong style="color:var(--accent2)">初領失業金 U 型反轉</strong>（50年最準指標）</li>
+              <li>第二次耐久財暴衝：景氣結束倒數計時</li>
+              <li>政府支出激增：稅收在高點轉向</li>
+              <li>違約率攀升：企業/個人違約數據回頭</li>
+            </ul>
+          </div>
+          <div>
+            <div class="cycle-list-title">投資策略</div>
+            <ul class="cycle-list">
+              <li>股市水位隨漲勢遞減（70%→50%→30%）</li>
+              <li><strong style="color:var(--accent2)">開始佈局長天期公債（TLT）</strong></li>
+              <li>避開高收益債（違約風險增）</li>
+              <li>原物料迎最後瘋狂，謹慎操作</li>
+            </ul>
+            <div class="cycle-list-title" style="margin-top:13px">資產配置</div>
+            <div class="invest-pills">
+              <span class="invest-pill pill-sell">減碼 股市</span>
+              <span class="invest-pill pill-buy">佈局 長債 TLT</span>
+              <span class="invest-pill pill-sell">避開 高收益債</span>
+            </div>
+            <div class="warning-box" style="margin-top:13px;border-left-color:var(--accent2)"><div class="warning-box-title" style="color:var(--accent2)">操盤法則</div><div class="warning-box-text">別在榮景期眷戀。當初領失業金 U 型反轉、利率倒掛後的末升段結束，必須嚴格執行撤退計畫。</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div class="cycle-block" style="background:rgba(255,77,109,.04);border:1px solid rgba(255,77,109,.2);border-radius:9px;overflow:hidden;margin-bottom:22px">
+        <div class="cycle-block-header">
+          <div class="cycle-icon" style="background:rgba(255,77,109,.12)">⚠</div>
+          <div><div class="cycle-block-title">衰退期 · Recession</div>
+          <div class="cycle-block-sub">最艱難的時期 · 保存實力 · 等待轉機</div></div>
+        </div>
+        <div class="cycle-block-body">
+          <div>
+            <div class="cycle-list-title">衰退確立的四大現象</div>
+            <ul class="cycle-list">
+              <li>就業惡化：非農就業月增轉負，初領失業金 U 型反轉</li>
+              <li>消費緊縮：零售銷售與耐久財訂單連續下滑</li>
+              <li>企業減碼：CAPEX 急凍，庫存/銷售比飆升</li>
+              <li>金融壓力：信用利差擴大，VIX 飆升，融資條件惡化</li>
+            </ul>
+          </div>
+          <div>
+            <div class="cycle-list-title">投資策略</div>
+            <ul class="cycle-list">
+              <li>大幅減股，資金撤入現金與長天期公債</li>
+              <li>公債從最差變最佳：利率下行收益最大</li>
+              <li>黃金在此期可持有（避險需求）</li>
+              <li>等待初領失業金高峰，即下一個復甦起點</li>
+            </ul>
+            <div class="invest-pills">
+              <span class="invest-pill pill-buy">買進 長債</span>
+              <span class="invest-pill pill-buy">持有 黃金</span>
+              <span class="invest-pill pill-sell">賣出 股市</span>
+              <span class="invest-pill pill-sell">現金為王</span>
+            </div>
+            <div class="warning-box" style="margin-top:13px;border-left-color:var(--danger)"><div class="warning-box-title">操盤法則</div><div class="warning-box-text">數據先行，永遠觀察四大連動：耐久財訂單、初領失業金、零售銷售、政府稅收，提前佈局下一個復甦。</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="subsection">
+    <div class="subsection-title">美國長天期公債四階段規律</div>
+    <div class="bond-cycle">
+      <div class="bond-stage"><div class="bond-stage-label">第一段</div><div class="bond-stage-name">主跌段</div><div class="bond-stage-desc">成長期至榮景期，通膨與增速升溫</div></div>
+      <div class="bond-stage"><div class="bond-stage-label">第二段</div><div class="bond-stage-name">反彈段</div><div class="bond-stage-desc">榮景期中期，升息走到盡頭</div></div>
+      <div class="bond-stage bond-best"><div class="bond-stage-label">第三段 ★ 最佳買點</div><div class="bond-stage-name">再修正</div><div class="bond-stage-desc">榮景期末期，利率暫緩後最後衝刺</div></div>
+      <div class="bond-stage bond-main"><div class="bond-stage-label">第四段</div><div class="bond-stage-name">長多段</div><div class="bond-stage-desc">進入衰退期，債價大漲</div></div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+>
 </div>
 <div class="sec-panel-wrap" id="sec-panel-sec-valuation">
   <div class="content-section" id="sec-valuation">
@@ -910,6 +1141,35 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
 <!-- ══════════════════════════════════════
   03  就業市場
 ══════════════════════════════════════ -->
+</div>
+</div>
+
+<div class="sec-group" id="sec-group-r2">
+<div class="sec-tab-bar cols-3">
+  <div class="sec-tab" id="sec-tab-sec-employment" onclick="toggleSecTab('r2','sec-employment')">
+    <div class="sec-tab-header">
+      <span class="sec-tab-num">04</span>
+      <span class="sec-tab-title">就業市場</span>
+      <span class="sec-tab-arrow">▼</span>
+    </div>
+    <div class="sec-tab-indicators"><span class="sec-ind-chip">非農就業</span><span class="sec-ind-chip">失業率</span><span class="sec-ind-chip">平均時薪</span><span class="sec-ind-chip">ECI</span><span class="sec-ind-chip">單位勞動成本</span><span class="sec-ind-chip">JOLTS</span></div>
+  </div>
+  <div class="sec-tab" id="sec-tab-sec-inflation" onclick="toggleSecTab('r2','sec-inflation')">
+    <div class="sec-tab-header">
+      <span class="sec-tab-num">05</span>
+      <span class="sec-tab-title">通貨膨脹</span>
+      <span class="sec-tab-arrow">▼</span>
+    </div>
+    <div class="sec-tab-indicators"><span class="sec-ind-chip">核心CPI</span><span class="sec-ind-chip">核心PCE</span><span class="sec-ind-chip">PPI</span><span class="sec-ind-chip">房租OER</span><span class="sec-ind-chip">密西根通膨預期</span></div>
+  </div>
+  <div class="sec-tab" id="sec-tab-sec-pmi" onclick="toggleSecTab('r2','sec-pmi')">
+    <div class="sec-tab-header">
+      <span class="sec-tab-num">06</span>
+      <span class="sec-tab-title">PMI 景氣</span>
+      <span class="sec-tab-arrow">▼</span>
+    </div>
+    <div class="sec-tab-indicators"><span class="sec-ind-chip">ISM製造業</span><span class="sec-ind-chip">新訂單</span><span class="sec-ind-chip">積壓訂單</span><span class="sec-ind-chip">供應商交期</span><span class="sec-ind-chip">ISM服務業</span></div>
+  </div>
 </div>
 <div class="sec-panel-wrap" id="sec-panel-sec-employment">
   <div class="content-section" id="sec-employment">
@@ -1145,6 +1405,35 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
 
 <!-- ══ 06 企業獲利 ══ -->
 </div>
+</div>
+
+<div class="sec-group" id="sec-group-r3">
+<div class="sec-tab-bar cols-3">
+  <div class="sec-tab" id="sec-tab-sec-earnings" onclick="toggleSecTab('r3','sec-earnings')">
+    <div class="sec-tab-header">
+      <span class="sec-tab-num">07</span>
+      <span class="sec-tab-title">企業獲利</span>
+      <span class="sec-tab-arrow">▼</span>
+    </div>
+    <div class="sec-tab-indicators"><span class="sec-ind-chip">Forward EPS</span><span class="sec-ind-chip">超預期率</span><span class="sec-ind-chip">利潤率</span><span class="sec-ind-chip">勞動佔比</span><span class="sec-ind-chip">指數目標點位</span></div>
+  </div>
+  <div class="sec-tab" id="sec-tab-sec-risk" onclick="toggleSecTab('r3','sec-risk')">
+    <div class="sec-tab-header">
+      <span class="sec-tab-num">08</span>
+      <span class="sec-tab-title">風險與流動性</span>
+      <span class="sec-tab-arrow">▼</span>
+    </div>
+    <div class="sec-tab-indicators"><span class="sec-ind-chip">VIX</span><span class="sec-ind-chip">BBB利差</span><span class="sec-ind-chip">HY利差</span><span class="sec-ind-chip">MOVE</span><span class="sec-ind-chip">DXY</span><span class="sec-ind-chip">貨幣市場規模</span></div>
+  </div>
+  <div class="sec-tab" id="sec-tab-sec-fed" onclick="toggleSecTab('r3','sec-fed')">
+    <div class="sec-tab-header">
+      <span class="sec-tab-num">09</span>
+      <span class="sec-tab-title">FED 升/降息意向</span>
+      <span class="sec-tab-arrow">▼</span>
+    </div>
+    <div class="sec-tab-indicators"><span class="sec-ind-chip">Fed Funds Rate</span><span class="sec-ind-chip">SOFR</span><span class="sec-ind-chip">CME FedWatch</span><span class="sec-ind-chip">2Y殖利率</span><span class="sec-ind-chip">10Y殖利率</span></div>
+  </div>
+</div>
 <div class="sec-panel-wrap" id="sec-panel-sec-earnings">
   <div class="content-section" id="sec-earnings">
   <div class="section-header">
@@ -1222,7 +1511,7 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
 </div>
 
 <div class="sec-group" id="sec-group-r3">
-<div class="sec-tab-bar cols-2">
+<div class="sec-tab-bar cols-3">
   <div class="sec-tab" id="sec-tab-sec-risk" onclick="toggleSecTab('r3','sec-risk')">
     <div class="sec-tab-header">
       <span class="sec-tab-num">07</span>
@@ -1238,6 +1527,14 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
       <span class="sec-tab-arrow">▼</span>
     </div>
     <div class="sec-tab-indicators"><span class="sec-ind-chip">Fed Funds Rate</span><span class="sec-ind-chip">SOFR</span><span class="sec-ind-chip">CME FedWatch</span><span class="sec-ind-chip">2Y殖利率</span><span class="sec-ind-chip">10Y殖利率</span><span class="sec-ind-chip">三種情境</span></div>
+  </div>
+  <div class="sec-tab" id="sec-tab-sec-framework" onclick="toggleSecTab('r3','sec-framework')">
+    <div class="sec-tab-header">
+      <span class="sec-tab-num">09</span>
+      <span class="sec-tab-title">景氣循環投資框架</span>
+      <span class="sec-tab-arrow">▼</span>
+    </div>
+    <div class="sec-tab-indicators"><span class="sec-ind-chip">先行/同步/滯後指標</span><span class="sec-ind-chip">IZY四格局</span><span class="sec-ind-chip">四大循環</span><span class="sec-ind-chip">公債循環</span><span class="sec-ind-chip">操盤法則</span></div>
   </div>
 </div>
 <div class="sec-panel-wrap" id="sec-panel-sec-risk">
@@ -1309,11 +1606,6 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
       <div class="warning-box-text">若 Fed 縮表（WALCL 下降）但 ON RRP 同步釋放，市場流動性可能維持平衡。若兩者同步縮減，市場面臨「窒息」。銀行惜貸比率急升通常領先企業違約率與衰退，與牛陡轉正共振則是撤退的最後通牒。</div>
     </div>
   </div>
-</div>
-
-<!-- ══════════════════════════════════════
-  08  FED 升/降息意向判斷
-══════════════════════════════════════ -->
 </div>
 <div class="sec-panel-wrap" id="sec-panel-sec-fed">
   <div class="content-section" id="sec-fed">
@@ -1646,228 +1938,6 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
   </div>
 </div>
 </div>
-</div>
-
-<div class="sec-group" id="sec-group-r4">
-<div class="sec-tab-bar cols-1">
-  <div class="sec-tab" id="sec-tab-sec-framework" onclick="toggleSecTab('r4','sec-framework')">
-    <div class="sec-tab-header">
-      <span class="sec-tab-num">09</span>
-      <span class="sec-tab-title">景氣循環投資框架</span>
-      <span class="sec-tab-arrow">▼</span>
-    </div>
-    <div class="sec-tab-indicators"><span class="sec-ind-chip">先行/同步/滯後指標</span><span class="sec-ind-chip">IZY四格局</span><span class="sec-ind-chip">製造業三階段</span><span class="sec-ind-chip">公債循環</span><span class="sec-ind-chip">操盤法則</span></div>
-  </div>
-</div>
-<div class="sec-panel-wrap" id="sec-panel-sec-framework">
-  <div class="content-section" id="sec-framework">
-  <div class="section-header"><div class="section-num">09</div><div><div class="section-title">景氣循環投資框架</div><div class="section-desc">Cycle Framework · 指標分類、格局定位與操盤法則</div></div></div>
-  ss="section-header">
-    <div class="section-num">▶</div>
-    <div class="section-title-wrap">
-      <div class="section-title">快速索引：指標先行 vs 滯後</div>
-      <div class="section-desc">Leading · Coincident · Lagging Indicators</div>
-    </div>
-  </div>
-  <div class="quick-index">
-    <div class="quick-index-row">
-      <div class="quick-index-label qi-leading">領先<br>指標</div>
-      <div class="quick-index-tags">
-        <span class="tag tag-leading">JOLTS 職位空缺</span>
-        <span class="tag tag-leading">初領失業金</span>
-        <span class="tag tag-leading">製造業建築支出</span>
-        <span class="tag tag-leading">WEI 每週指數</span>
-        <span class="tag tag-leading">ISM 新訂單</span>
-        <span class="tag tag-leading">銅金比</span>
-        <span class="tag tag-leading">油金比</span>
-        <span class="tag tag-leading">SOFR 曲線形態</span>
-        <span class="tag tag-leading">Term SOFR 12M−1M 利差</span>
-        <span class="tag tag-leading">2Y 美債殖利率</span>
-        <span class="tag tag-leading">ERP 股票風險溢價</span>
-        <span class="tag tag-leading">Forward EPS 修正趨勢</span>
-      </div>
-    </div>
-    <div class="quick-index-row">
-      <div class="quick-index-label qi-sync">同步<br>指標</div>
-      <div class="quick-index-tags">
-        <span class="tag tag-sync">實質 GDP</span>
-        <span class="tag tag-sync">PCE</span>
-        <span class="tag tag-sync">製造業聘僱</span>
-        <span class="tag tag-sync">ISM 製造業 PMI</span>
-        <span class="tag tag-sync">Forward Revenue per Share</span>
-      </div>
-    </div>
-    <div class="quick-index-row">
-      <div class="quick-index-label qi-lag">滯後<br>指標</div>
-      <div class="quick-index-tags">
-        <span class="tag tag-lag">失業率</span>
-        <span class="tag tag-lag">長期失業人口</span>
-        <span class="tag tag-lag">CPI 房租</span>
-        <span class="tag tag-lag">企業違約率</span>
-        <span class="tag tag-lag">CAPE 席勒本益比</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ══ 景氣循環框架 ══ -->
-<div class="content-section" id="sec-cycle">
-  <div class="section-header">
-    <div class="section-num">★</div>
-    <div class="section-title-wrap">
-      <div class="section-title">景氣循環投資框架</div>
-      <div class="section-desc">Business Cycle Framework · Asset Allocation by Phase</div>
-    </div>
-  </div>
-  <div class="subsection">
-    <div class="subsection-title">投資格局四象限</div>
-    <div class="izy-grid">
-      <div class="izy-card izy-card-g1">
-        <div class="izy-card-num">格局 1</div>
-        <div class="izy-card-risk">風險低 ＋ 報酬高</div>
-        <div class="izy-card-stages"><strong style="color:var(--accent)">股市：</strong>復甦期 → 成長期<br><strong style="color:var(--accent)">債市：</strong>榮景期尾聲</div>
-      </div>
-      <div class="izy-card izy-card-g2">
-        <div class="izy-card-num">格局 2</div>
-        <div class="izy-card-risk">風險低 ＋ 報酬低</div>
-        <div class="izy-card-stages"><strong style="color:var(--accent3)">股市：</strong>成長期 → 榮景期中期<br><strong style="color:var(--accent3)">債市：</strong>衰退期初期</div>
-      </div>
-      <div class="izy-card izy-card-g3">
-        <div class="izy-card-num">格局 3</div>
-        <div class="izy-card-risk">風險高 ＋ 報酬高</div>
-        <div class="izy-card-stages"><strong style="color:var(--accent2)">股市：</strong>榮景期中期後<br><strong style="color:var(--accent2)">債市：</strong>衰退期後期</div>
-      </div>
-      <div class="izy-card izy-card-g4">
-        <div class="izy-card-num">格局 4</div>
-        <div class="izy-card-risk">風險高 ＋ 報酬低</div>
-        <div class="izy-card-stages"><strong style="color:var(--danger)">股市：</strong>榮景期尾聲及衰退初期<br><strong style="color:var(--danger)">債市：</strong>復甦期 → 成長期</div>
-      </div>
-    </div>
-  </div>
-  <div class="subsection">
-    <div class="subsection-title">三大循環階段深度拆解</div>
-    <div class="cycle-blocks">
-      <div class="cycle-block cycle-recovery">
-        <div class="cycle-block-header"><div class="cycle-icon">🌱</div><div><div class="cycle-block-title">復甦期 · Recovery</div><div class="cycle-block-sub">景氣最壞已過 · 政策紅利全力作多</div></div></div>
-        <div class="cycle-block-body">
-          <div>
-            <div class="cycle-list-title">確認落底的四大現象</div>
-            <ul class="cycle-list">
-              <li>貨幣極度寬鬆：長短利率大幅下滑</li>
-              <li>財政刺激出爐：減稅、擴大政府支出</li>
-              <li>原物料價格低迷：降低生產成本</li>
-              <li>極低基期效應：數據稍好轉，年增率即噴發</li>
-            </ul>
-            <div class="cycle-list-title" style="margin-top:13px">關鍵判斷指標</div>
-            <ul class="cycle-list">
-              <li><strong>就業：</strong>初領失業金高峰即起點</li>
-              <li><strong>消費：</strong>零售銷售與耐久財支出止跌</li>
-              <li><strong>投資：</strong>私人固定資本投資走出低迷</li>
-              <li><strong>外貿：</strong>進口金額年增率回溫</li>
-            </ul>
-          </div>
-          <div>
-            <div class="cycle-list-title">投資策略</div>
-            <ul class="cycle-list">
-              <li>現金不可為王，勇敢進場股市</li>
-              <li>加碼股市、高收益債</li>
-              <li>黃金此時應賣出</li>
-              <li>無風險債券僅剩低息，避開</li>
-            </ul>
-            <div class="cycle-list-title" style="margin-top:13px">資產配置</div>
-            <div class="invest-pills">
-              <span class="invest-pill pill-buy">買進 股市</span>
-              <span class="invest-pill pill-buy">買進 高收益債</span>
-              <span class="invest-pill pill-sell">賣出 黃金</span>
-              <span class="invest-pill pill-sell">避開 美債</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cycle-block cycle-growth">
-        <div class="cycle-block-header"><div class="cycle-icon">📈</div><div><div class="cycle-block-title">成長期 · Growth</div><div class="cycle-block-sub">太平盛世 · 時間最長 · 長期佈局最佳期</div></div></div>
-        <div class="cycle-block-body">
-          <div>
-            <div class="cycle-list-title">穩定增長的四大現象</div>
-            <ul class="cycle-list">
-              <li>遞延消費釋放：儲蓄率下降，消費穩定擴張</li>
-              <li>就業循環確立：廠商擴編，良性循環</li>
-              <li>投資良性擴張：企業樂觀，資本投入增加</li>
-              <li>溫和通膨：回升至健康水準，鞏固信心</li>
-            </ul>
-            <div class="warning-box" style="margin-top:13px"><div class="warning-box-title">關鍵警語</div><div class="warning-box-text">此時期風險事件多為「虛驚一場」，不應輕易撤出。本益比超越歷史均值在此階段是正常現象。</div></div>
-          </div>
-          <div>
-            <div class="cycle-list-title">投資策略</div>
-            <ul class="cycle-list">
-              <li>持續買進與持有風險資產</li>
-              <li>股市最佳標的，獲利增長支撐高估值</li>
-              <li>美債大跌期，避開無風險債券</li>
-              <li>原物料初期上揚，後期應避開</li>
-            </ul>
-            <div class="cycle-list-title" style="margin-top:13px">資產配置</div>
-            <div class="invest-pills">
-              <span class="invest-pill pill-buy">持續 股市</span>
-              <span class="invest-pill pill-sell">避開 美債</span>
-              <span class="invest-pill pill-hold">初期 原物料</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cycle-block cycle-boom">
-        <div class="cycle-block-header"><div class="cycle-icon">🔥</div><div><div class="cycle-block-title">榮景期 · Prosperity</div><div class="cycle-block-sub">景氣最後高潮 · 加速成長 · 風險意識喪失</div></div></div>
-        <div class="cycle-block-body">
-          <div>
-            <div class="cycle-list-title">榮景期的判斷指標</div>
-            <ul class="cycle-list">
-              <li>消費大於收入：透支消費成形</li>
-              <li><strong style="color:var(--accent2)">初領失業金 U 型反轉</strong>（50年最準指標）</li>
-              <li>第二次耐久財暴衝：景氣結束倒數計時</li>
-              <li>政府支出激增：稅收在高點轉向</li>
-              <li>違約率攀升：企業/個人違約數據回頭</li>
-            </ul>
-          </div>
-          <div>
-            <div class="cycle-list-title">投資策略</div>
-            <ul class="cycle-list">
-              <li>股市水位隨漲勢遞減（70%→50%→30%）</li>
-              <li><strong style="color:var(--accent2)">開始佈局長天期公債（TLT）</strong></li>
-              <li>避開高收益債（違約風險增）</li>
-              <li>原物料迎最後瘋狂，謹慎操作</li>
-            </ul>
-            <div class="cycle-list-title" style="margin-top:13px">資產配置</div>
-            <div class="invest-pills">
-              <span class="invest-pill pill-sell">減碼 股市</span>
-              <span class="invest-pill pill-buy">佈局 長債 TLT</span>
-              <span class="invest-pill pill-sell">避開 高收益債</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="subsection">
-    <div class="subsection-title">美國長天期公債四階段規律</div>
-    <div class="bond-cycle">
-      <div class="bond-stage"><div class="bond-stage-label">第一段</div><div class="bond-stage-name">主跌段</div><div class="bond-stage-desc">成長期至榮景期，通膨與增速升溫</div></div>
-      <div class="bond-stage"><div class="bond-stage-label">第二段</div><div class="bond-stage-name">反彈段</div><div class="bond-stage-desc">榮景期中期，升息走到盡頭</div></div>
-      <div class="bond-stage bond-best"><div class="bond-stage-label">第三段 ★ 最佳買點</div><div class="bond-stage-name">再修正</div><div class="bond-stage-desc">榮景期末期，利率暫緩後最後衝刺</div></div>
-      <div class="bond-stage bond-main"><div class="bond-stage-label">第四段</div><div class="bond-stage-name">長多段</div><div class="bond-stage-desc">進入衰退期，債價大漲</div></div>
-    </div>
-  </div>
-  <div class="subsection">
-    <div class="subsection-title">景氣循環操盤四大法則</div>
-    <div class="advice-list">
-      <div class="advice-item"><div class="advice-num">1</div><div class="advice-content"><div class="advice-key">別在復甦期恐慌</div><div class="advice-text">二次衰退的傳言通常只是高基期數據造成的幻象。</div></div></div>
-      <div class="advice-item"><div class="advice-num">2</div><div class="advice-content"><div class="advice-key">別在成長期嫌貴</div><div class="advice-text">企業獲利增長會消弭昂貴的本益比。</div></div></div>
-      <div class="advice-item"><div class="advice-num">3</div><div class="advice-content"><div class="advice-key">別在榮景期眷戀</div><div class="advice-text">當初領失業金 U 型反轉、利率倒掛後的末升段結束，必須嚴格執行撤退計畫。</div></div></div>
-      <div class="advice-item"><div class="advice-num">4</div><div class="advice-content"><div class="advice-key">數據先行，永遠觀察四大連動</div><div class="advice-text">耐久財訂單、初領失業金人數、零售銷售、政府稅收的連動關係。</div></div></div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
 
 </main>
 
@@ -1876,13 +1946,16 @@ tbody td{padding:9px 13px;color:var(--text);vertical-align:top}
 
 // ── Section Card Tabs ──
 function toggleSecTab(gid, sid){
-  var group=document.getElementById('sec-group-'+gid);
-  var wasActive=document.getElementById('sec-tab-'+sid).classList.contains('active');
-  group.querySelectorAll('.sec-tab').forEach(function(t){t.classList.remove('active')});
-  group.querySelectorAll('.sec-panel-wrap').forEach(function(p){p.classList.remove('open')});
+  var tab=document.getElementById('sec-tab-'+sid);
+  var panel=document.getElementById('sec-panel-'+sid);
+  var wasActive=tab.classList.contains('active');
+  // 全域關閉所有卡片
+  document.querySelectorAll('.sec-tab').forEach(function(t){t.classList.remove('active')});
+  document.querySelectorAll('.sec-panel-wrap').forEach(function(p){p.classList.remove('open')});
+  // 若原本是關閉的才打開（點擊已開的 = 收起）
   if(!wasActive){
-    document.getElementById('sec-tab-'+sid).classList.add('active');
-    document.getElementById('sec-panel-'+sid).classList.add('open');
+    tab.classList.add('active');
+    panel.classList.add('open');
   }
 }
 // ── Nav 點擊展開對應 section ──
@@ -1921,7 +1994,7 @@ function toggleScen(summaryEl){
 function setSize(sz){
   document.documentElement.setAttribute('data-size',sz);
   document.querySelectorAll('[onclick*="setSize"]').forEach(b=>{
-    b.classList.toggle('active', b.textContent=={sm:'小',md:'中',lg:'大'}[sz]);
+    b.classList.toggle('active',b.textContent=={sm:'小',md:'中',lg:'大'}[sz]);
   });
   localStorage.setItem('macro-size',sz);
 }
